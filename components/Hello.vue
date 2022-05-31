@@ -1,13 +1,17 @@
 <template>
-  <div>Hello</div>
+  <div class="container px-4 custom">{{ title }}</div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+  export default defineComponent({
+    setup() {
+      const title = 'Hello World'
 
-}
+      return {
+        title,
+      }
+    },
+  })
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
