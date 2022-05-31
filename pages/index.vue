@@ -1,13 +1,3 @@
 <template>
-  <Hello />
+  <TheHello />
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
