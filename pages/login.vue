@@ -1,7 +1,10 @@
 <script lang="ts">
   export default defineComponent({
-    setup() {
+    async setup() {
       const supabase = useSupabase()
+      const { data } = await useFetch('/api/hello')
+
+      console.log(data.value.api)
 
       const email = ref('')
       const password = ref('')
